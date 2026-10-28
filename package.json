@@ -1,19 +1,65 @@
 {
   "name": "@deepwhale-cn/dsh-remote-gate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "深鲸远程访问加固：上线前扫描监听地址、鉴权开关、CORS、默认口令等远程暴露风险",
   "type": "module",
   "license": "MIT",
-  "keywords": ["dsh","dsh-plugin","deepseek-harness","plugin","skill","security","remote","hardening","加固"],
-  "files": ["lib","bin","skill","cordis.patch.yml","README.md","LICENSE"],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "skill",
+    "security",
+    "remote",
+    "hardening",
+    "加固"
+  ],
+  "files": [
+    "lib",
+    "bin",
+    "skill",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
   "main": "./lib/index.js",
-  "exports": { ".": "./lib/index.js", "./client": "./lib/client.js", "./package.json": "./package.json" },
-  "bin": { "dsh-remote-gate": "./bin/cli.mjs" },
-  "engines": { "dsh": ">=0.1.0-rc.6 <0.3.0", "node": ">=18" },
-  "dsh": { "bundle": { "patch": "./cordis.patch.yml" }, "client": { "inject": ["@deepseek-ai/dsh-client-runtime"], "platform": "web", "immediately": true } },
-  "dependencies": { "@deepwhale-cn/dsh-guard-core": "^0.10.1" },
-  "peerDependencies": { "@deepseek-ai/dsh-skill": "*" },
-  "repository": { "type": "git", "url": "git+https://github.com/feely0208/dsh-remote-gate.git" },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "dsh-remote-gate": "./bin/cli.mjs"
+  },
+  "engines": {
+    "dsh": ">=0.1.0-rc.6 <0.3.0",
+    "node": ">=18"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime"
+      ],
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "dependencies": {
+    "@deepwhale-cn/dsh-guard-core": "^0.10.1"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-skill": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feely0208/dsh-remote-gate.git"
+  },
   "homepage": "https://www.deepwhale.org.cn/skills.html",
-  "bugs": { "url": "https://github.com/feely0208/dsh-remote-gate/issues" }
+  "bugs": {
+    "url": "https://github.com/feely0208/dsh-remote-gate/issues"
+  }
 }

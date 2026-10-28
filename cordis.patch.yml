@@ -1,0 +1,4 @@
+# @deepwhale-cn/dsh-remote-gate 的组合层
+- insert:
+    - id: remote-gate
+      name: '@deepwhale-cn/dsh-remote-gate'
