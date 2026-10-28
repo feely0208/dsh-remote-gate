@@ -1,7 +1,7 @@
 {
   "name": "@deepwhale-cn/dsh-remote-gate",
-  "version": "0.1.1",
-  "description": "深鲸远程访问加固：上线前扫描监听地址、鉴权开关、CORS、默认口令等远程暴露风险",
+  "version": "0.1.2",
+  "description": "深鲸远程门禁：上线前扫描监听地址、鉴权开关、CORS、默认口令等远程暴露风险",
   "type": "module",
   "license": "MIT",
   "keywords": [

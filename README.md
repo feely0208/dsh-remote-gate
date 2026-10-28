@@ -1,4 +1,4 @@
-# 深鲸远程访问加固（@deepwhale-cn/dsh-remote-gate）
+# 深鲸远程门禁（@deepwhale-cn/dsh-remote-gate）
 
 服务暴露到网络前，扫一遍典型远程风险：监听 0.0.0.0、鉴权被关、CORS 通配、明文管理端口、默认口令、调试模式。
 
